@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: CDIDemo
+  host: CDIDemo
+  disk_quota: 1024M
+  services:
+  - Auto-Scaling-g9
+  - CDIDemo-cloudantNoSQLDB
+  - availability-monitoring-auto
